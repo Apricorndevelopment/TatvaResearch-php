@@ -1,59 +1,37 @@
-<?php
-session_start();
-require '../config/db.php';
-
-$error = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    $query = "SELECT * FROM admins WHERE username = ?";
-    $stmt = mysqli_prepare($conn, $query);
-    mysqli_stmt_bind_param($stmt, "s", $username);
-    mysqli_stmt_execute($stmt);
-
-    $result = mysqli_stmt_get_result($stmt);
-    $user = mysqli_fetch_assoc($result);
-
-    if ($user && password_verify($password, $user['password'])) {
-        $_SESSION['admin'] = $user['username'];
-        header("Location: dashboard.php");
-        exit();
-    } else {
-        $error = "Invalid Username or Password";
-    }
-}
-?>
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Login</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+<title>Tatva Research Admin Login</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+</style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
 
-<div class="bg-white p-8 rounded-xl shadow-lg w-96">
-    <h2 class="text-2xl font-bold mb-6 text-center">Admin Login</h2>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 flex items-center justify-center">
 
-    <?php if ($error): ?>
-        <p class="text-red-500 mb-4"><?= $error ?></p>
-    <?php endif; ?>
+<div class="w-full max-w-md bg-white/10 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-white/20">
 
-    <form method="POST">
-        <input type="text" name="username" placeholder="Username"
-            class="w-full mb-4 p-3 border rounded" required>
+<h2 class="text-3xl font-bold text-white text-center mb-6">
+Tatva Research Admin
+</h2>
 
-        <input type="password" name="password" placeholder="Password"
-            class="w-full mb-4 p-3 border rounded" required>
+<form action="login/login_process.php" method="POST" class="space-y-5">
 
-        <button type="submit"
-            class="w-full bg-indigo-600 text-white p-3 rounded hover:bg-indigo-700">
-            Login
-        </button>
-    </form>
+<input type="email" name="email" placeholder="Email"
+class="w-full p-3 rounded-xl bg-white/20 text-white placeholder-gray-300 outline-none">
+
+<input type="password" name="password" placeholder="Password"
+class="w-full p-3 rounded-xl bg-white/20 text-white placeholder-gray-300 outline-none">
+
+<button class="w-full py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl text-white font-semibold hover:scale-105 transition">
+Login
+</button>
+
+</form>
+
 </div>
 
 </body>

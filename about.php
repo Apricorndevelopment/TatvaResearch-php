@@ -33,118 +33,13 @@
 <body class="bg-white text-gray-800 antialiased">
     <?php
 $page_title = "About Us | Tatva Research";
-include 'components/header.php';
+include 'components/common/header.php';
 ?>
-
-<!-- ========== PREMIUM HERO / BRAND STORY ========== -->
-<section class="relative pt-24 pb-28 bg-gradient-to-br from-[#0b1f3a] via-[#112b4e] to-[#1b3a5c] text-white overflow-hidden">
-    <!-- abstract pattern overlay -->
-    <div class="absolute inset-0 opacity-10">
-        <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <defs><pattern id="grid" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.6"/></pattern></defs>
-            <rect width="100%" height="100%" fill="url(#grid)"/>
-        </svg>
-    </div>
-    
-    <div class="container mx-auto px-6 lg:px-8 relative z-10">
-
-        <!-- Breadcrumb with refined hierarchy -->
-        <div class="mb-12 text-sm font-medium flex items-center space-x-2 text-indigo-200/90">
-            <a href="index.php" class="hover:text-white transition flex items-center"><i class="fas fa-home mr-1 text-xs"></i>Home</a>
-            <span class="text-indigo-300/50">/</span>
-            <span class="text-white font-semibold tracking-wide">About Tatva Research</span>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <!-- LEFT: powerful headline + expanded story -->
-            <div class="space-y-6 fade-in-up">
-                <div class="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20 shadow-sm">
-                    ⚡ TRUSTED INSIGHTS · GLOBAL AGENCY
-                </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-                    We don't just <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-cyan-200">analyze data</span> — we humanize it.
-                </h1>
-                <p class="text-xl text-indigo-100/90 leading-relaxed max-w-xl">
-                    <span class="font-semibold text-white">Tatva Research</span> decodes complexity.  
-                    From fragmented surveys to strategic clarity — we empower brands to act with conviction.
-                </p>
-                <!-- stats teaser -->
-                <div class="flex flex-wrap gap-6 pt-4">
-                    <div><span class="text-3xl font-bold text-white">15+</span> <span class="text-indigo-200 block text-sm">years of insight</span></div>
-                    <div><span class="text-3xl font-bold text-white">400+</span> <span class="text-indigo-200 block text-sm">global brands</span></div>
-                    <div><span class="text-3xl font-bold text-white">98%</span> <span class="text-indigo-200 block text-sm">client retention</span></div>
-                </div>
-            </div>
-
-            <!-- RIGHT: image with dimensional effect + brand tag -->
-            <div class="relative flex justify-center">
-                <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/30 to-cyan-400/30 rounded-3xl blur-3xl"></div>
-                <div class="relative bg-white/5 p-1 rounded-3xl backdrop-filter backdrop-blur-sm border border-white/20 shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80" 
-                         alt="Tatva strategy session — diverse team analyzing market research dashboard" 
-                         class="rounded-2xl object-cover w-full h-full max-h-[360px] lg:max-h-[400px] border-4 border-white/10 shadow-xl">
-                </div>
-                <!-- floating badge -->
-                <div class="absolute -bottom-5 -left-6 bg-white text-gray-900 px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 font-medium text-sm lg:text-base">
-                    <i class="fa-solid fa-chart-line text-indigo-700 text-xl"></i>
-                    <span>data clarity · since 2009</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include 'components/about/hero.php'?>
+<?php include 'components/about/about.php'?>
+<?php include 'components/about/feature.php'?>
 
 
-<!-- ===== MISSION & VISION / DISTINCT EDGE ===== -->
-<section class="py-24 bg-white relative overflow-hidden">
-    <div class="container mx-auto px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <!-- left: who we truly are -->
-            <div>
-                <span class="text-indigo-600 font-semibold text-base uppercase tracking-wider border-b-2 border-indigo-200 pb-1">Our essence</span>
-                <h2 class="text-3xl md:text-4xl font-black mt-6 mb-6 text-gray-900 leading-tight">Quietly confident. <br>Ferociously curious.</h2>
-                <div class="space-y-5 text-gray-600 text-lg leading-relaxed">
-                    <p>We are <span class="bg-indigo-50 px-2 py-0.5 text-indigo-800 font-medium">marketing researchers & strategists</span> who believe that truth hides in the raw data — we extract it with precision, empathy, and zero noise.</p>
-                    <p>From verbatim coding to predictive analytics, every layer of our methodology is built to <span class="font-semibold text-gray-900">remove guesswork from boardroom decisions</span>. No vanity metrics, only directional truth.</p>
-                    <p class="italic text-gray-500 border-l-4 border-indigo-300 pl-5 mt-6">"We never forget that behind every data point is a human being making a choice."</p>
-                </div>
-                <!-- compact awards / recognition -->
-                <div class="mt-10 flex items-center gap-6">
-                    <div class="flex -space-x-2">
-                        <img class="w-10 h-10 rounded-full border-2 border-white shadow-md" src="https://randomuser.me/api/portraits/women/44.jpg" alt="team">
-                        <img class="w-10 h-10 rounded-full border-2 border-white shadow-md" src="https://randomuser.me/api/portraits/men/32.jpg" alt="team">
-                        <img class="w-10 h-10 rounded-full border-2 border-white shadow-md" src="https://randomuser.me/api/portraits/women/68.jpg" alt="team">
-                        <img class="w-10 h-10 rounded-full border-2 border-white shadow-md" src="https://randomuser.me/api/portraits/men/75.jpg" alt="team">
-                    </div>
-                    <span class="text-sm text-gray-500 font-medium"><span class="text-indigo-700">50+</span> research specialists</span>
-                </div>
-            </div>
-            <!-- right: featured pillars with micro-interaction -->
-            <div class="grid grid-cols-2 gap-5">
-                <div class="bg-indigo-50 p-6 rounded-2xl hover:shadow-lg transition hover:bg-indigo-100/60 group">
-                    <i class="fa-solid fa-magnifying-glass-chart text-indigo-700 text-3xl mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-extrabold text-gray-900 mb-2">Verbatim decoding</h3>
-                    <p class="text-sm text-gray-600">Human‑led + AI‑augmented coding, capturing sentiment nuances.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-2xl hover:shadow-lg transition hover:bg-indigo-100/60 group">
-                    <i class="fa-solid fa-vector-square text-indigo-700 text-3xl mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-extrabold text-gray-900 mb-2">Survey architecture</h3>
-                    <p class="text-sm text-gray-600">Bias‑free questionnaires that yield decision‑grade data.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-2xl hover:shadow-lg transition hover:bg-indigo-100/60 group">
-                    <i class="fa-solid fa-chart-scatter text-indigo-700 text-3xl mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-extrabold text-gray-900 mb-2">Advanced analytics</h3>
-                    <p class="text-sm text-gray-600">Segmentation, MaxDiff, conjoint — clarity in every dimension.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-2xl hover:shadow-lg transition hover:bg-indigo-100/60 group">
-                    <i class="fa-solid fa-bezier-curve text-indigo-700 text-3xl mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-extrabold text-gray-900 mb-2">Strategic narrative</h3>
-                    <p class="text-sm text-gray-600">Translate stats into stories that persuade and inspire.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <!-- ===== CORE PHILOSOPHY — amplified, with motion & personality ===== -->
@@ -289,54 +184,10 @@ include 'components/header.php';
 </section>
 
 
-<!-- ===== TRANSFORM DATA INTO GROWTH — ELEVATED CTA ===== -->
-<section class="relative py-28 bg-gradient-to-r from-[#0f2b4b] to-[#1c3e63] text-white overflow-hidden">
-    <div class="absolute right-0 top-0 w-1/3 h-full opacity-20">
-        <i class="fa-solid fa-circle-nodes text-[250px] absolute -top-10 -right-10 text-indigo-300/40"></i>
-    </div>
-    <div class="container mx-auto px-6 lg:px-8 text-center relative z-20">
-        <span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium tracking-wider border border-white/30 mb-6">🚀 ready for clarity?</span>
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 max-w-4xl mx-auto leading-tight">Your next breakthrough is buried in data. <br>Let’s excavate it together.</h2>
-        <p class="text-xl text-indigo-100 max-w-2xl mx-auto mb-10">Whether you need a full‑scale tracking study or a focused consumer segment — Tatva Research brings the expertise and empathy.</p>
-        <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
-            <a href="contact.php" class="group bg-white text-indigo-900 px-10 py-5 rounded-full font-bold text-lg shadow-2xl hover:bg-gray-50 transition-all inline-flex items-center gap-3">
-                <span>Spark a conversation</span> 
-                <i class="fa-solid fa-arrow-right group-hover:translate-x-1.5 transition"></i>
-            </a>
-            <a href="#" class="bg-transparent border-2 border-white/70 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white/10 transition flex items-center gap-2">
-                <i class="fa-regular fa-file-lines"></i> Download capability deck
-            </a>
-        </div>
-        <!-- micro footer note -->
-        <p class="text-indigo-200 text-sm mt-12"><i class="fa-regular fa-clock mr-1"></i> Most clients receive first strategic insights within 5 working days.</p>
-    </div>
-</section>
 
+<?php include 'components/about/testimonial.php'?>
 
-<!-- ===== FOOTER ===== -->
-<footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
-    <div class="container mx-auto px-6 text-center flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-            <span class="text-white text-2xl font-bold tracking-tight">tatva<span class="text-indigo-400">research</span></span>
-            <span class="block text-xs mt-1 text-gray-500">© <?php echo date("Y"); ?> · clarity from complexity</span>
-        </div>
-        <div class="flex space-x-8 text-sm">
-            <a href="#" class="hover:text-white transition">Privacy</a>
-            <a href="#" class="hover:text-white transition">Careers</a>
-            <a href="#" class="hover:text-white transition">Insights</a>
-            <a href="contact.php" class="text-indigo-400 hover:text-indigo-300 transition">Contact</a>
-        </div>
-        <div class="flex space-x-5 mt-4 md:mt-0">
-            <i class="fa-brands fa-linkedin-in hover:text-white cursor-pointer transition"></i>
-            <i class="fa-brands fa-x-twitter hover:text-white cursor-pointer transition"></i>
-            <i class="fa-brands fa-instagram hover:text-white cursor-pointer transition"></i>
-        </div>
-    </div>
-    <div class="container mx-auto px-6 mt-8 text-xs text-gray-600 text-center border-t border-gray-800/60 pt-6">
-        <p>Data with direction. Tatva Research is a results-driven marketing agency specializing in high-impact market research and intelligence.</p>
-    </div>
-</footer>
-
+<?php include 'components/common/footer.php'?>
 <!-- subtle back-to-top for delight -->
 <div class="fixed bottom-10 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-2xl cursor-pointer hover:bg-indigo-700 transition z-50">
     <i class="fa-solid fa-arrow-up"></i>

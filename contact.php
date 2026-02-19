@@ -42,19 +42,7 @@
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 antialiased">
 
-<!-- ==================== INCLUDE HEADER (simulated) ==================== -->
-<!-- normally includes/header.php, but we just show a minimalistic nav for demonstration -->
-<nav class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200/80 dark:border-gray-700/50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="index.php" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AI MarketIntel</a>
-        <div class="space-x-8 text-sm font-medium text-gray-700 dark:text-gray-200">
-            <a href="index.php" class="hover:text-blue-600 dark:hover:text-blue-400">Home</a>
-            <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Platform</a>
-            <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Research</a>
-            <a href="contact.php" class="text-blue-600 dark:text-blue-400 font-semibold">Contact</a>
-        </div>
-    </div>
-</nav>
+<?php include 'components/common/header.php'?>
 
 <!-- ================ HERO / BREADCRUMB : elevated glass & wave ================ -->
 <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 py-28 text-white">
@@ -98,49 +86,7 @@
     
     <div class="container mx-auto px-6 relative z-10">
         <div class="grid lg:grid-cols-2 gap-16 items-start">
-            
-            <!-- ---------- LEFT: FORM with luxurious card & floating labels ---------- -->
-            <div class="glass-card rounded-3xl shadow-2xl p-8 md:p-10 border border-white/50 dark:border-gray-700/50 backdrop-blur-xl">
-                <div class="flex items-center gap-3 mb-8">
-                    <span class="p-3 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl shadow-lg">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                    </span>
-                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Send a message</h2>
-                </div>
-                
-                <form method="POST" action="" class="space-y-7">
-                    <!-- full name with icon -->
-                    <div class="relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500 dark:text-gray-400">👤</span>
-                        <input type="text" name="name" placeholder="Your full name"
-                            class="w-full pl-11 pr-5 py-4 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm focus:bg-white dark:focus:bg-gray-800 focus:ring-4 focus:ring-blue-500/20 outline-none transition dark:text-white">
-                    </div>
-                    
-                    <!-- email -->
-                    <div class="relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500 dark:text-gray-400">✉️</span>
-                        <input type="email" name="email" placeholder="Email address"
-                            class="w-full pl-11 pr-5 py-4 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm focus:bg-white dark:focus:bg-gray-800 focus:ring-4 focus:ring-blue-500/20 outline-none transition dark:text-white">
-                    </div>
-                    
-                    <!-- message -->
-                    <div class="relative">
-                        <span class="absolute top-5 left-0 pl-4 text-gray-500 dark:text-gray-400">💬</span>
-                        <textarea name="message" rows="5" placeholder="How can we help you?"
-                            class="w-full pl-11 pr-5 py-4 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm focus:bg-white dark:focus:bg-gray-800 focus:ring-4 focus:ring-blue-500/20 outline-none transition dark:text-white"></textarea>
-                    </div>
-                    
-                    <button type="submit"
-                        class="group relative w-full py-4 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-[1.02] transition duration-300 flex items-center justify-center gap-3">
-                        <span>Send message</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </button>
-                    
-                    <p class="text-xs text-gray-500 dark:text-gray-400 text-center mt-4">
-                        We’ll respond within 24 hours, usually sooner 🚀
-                    </p>
-                </form>
-            </div>
+            <?php include 'components/contact/contactform.php'?>
             
             <!-- ---------- RIGHT: CONTACT INFO / BRAND STORY with ELEGANT CARDS ---------- -->
             <div class="space-y-8">
