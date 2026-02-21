@@ -33,7 +33,10 @@
 </head>
 <body class="bg-white dark:bg-gray-950 antialiased">
 
-<?php include 'components/common/header.php'?>
+   <?php
+$page_title = "Home | Tatva Research";
+include 'components/common/header.php';
+?>
 
    <?php include 'components/index/hero.php'?>
    <?php include 'components/index/explain.php'?>

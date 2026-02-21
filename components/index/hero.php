@@ -1,5 +1,5 @@
 <!-- ===== HERO SECTION ===== -->
-<section class="ve to a particular section andoverflow hidden hide anythig which goes outside the video -->
+<section class="bg-gradient-to-br from-[#0b1f3a] via-[#112b4e] to-[#1b3a5c]  text-white py-16 ">
     <div class="absolute inset-0">
         <video autoplay loop muted playsinline class="w-full h-full object-cover scale-105">
             <source src="assets/videos/bdvdo3.mp4" type="video/mp4">
