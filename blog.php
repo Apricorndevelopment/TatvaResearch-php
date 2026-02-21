@@ -1,3 +1,4 @@
+   
 <?php include 'components/common/header.php'?>
 <?php
 include "admin/includes/db.php";
@@ -9,13 +10,14 @@ $result = $conn->query("SELECT * FROM blog ORDER BY id DESC");
 <!DOCTYPE html>
 <html>
 <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tatva Research Blogs</title>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-50">
-   
-
+<body>
+ 
 <!-- Hero Section -->
 <section class="bg-gradient-to-br from-[#0b1f3a] via-[#112b4e] to-[#1b3a5c]  text-white py-16 ">
 <div class="max-w-6xl mx-auto px-6 text-center mt-8">

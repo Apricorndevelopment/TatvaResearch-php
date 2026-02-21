@@ -42,27 +42,7 @@
 </head>
 <body class="bg-white dark:bg-gray-900 antialiased">
 
-    <!-- ========== HEADER (glass effect, fixed) ========== -->
-    <?php
-    // include 'components/header.php';
-    // demonstration header matching design language
-    ?>
-    <header class="fixed top-0 left-0 w-full z-50 glass-header py-4 px-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-indigo-600 dark:from-blue-300 dark:to-indigo-200">
-                TAV RESEARCH
-            </a>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700 dark:text-gray-200">
-                <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
-                <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Intelligence</a>
-                <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Solutions</a>
-                <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
-            </nav>
-            <button class="md:hidden text-gray-700 dark:text-gray-200 text-2xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
+ <?php include 'components/common/header.php'?>
 
     <!-- ================= HERO SECTION (video behind header) ================= -->
     <section id="home" class="relative w-full overflow-hidden min-h-screen flex items-center" style="margin-top: 0;">

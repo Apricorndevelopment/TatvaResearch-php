@@ -1,6 +1,5 @@
 <!-- ===== HERO SECTION ===== -->
-<section class="relative overflow-hidden bg-gray-950" style="height:620px;">
-    <!-- the absolute should be relative to a particular section andoverflow hidden hide anythig which goes outside the video -->
+<section class="ve to a particular section andoverflow hidden hide anythig which goes outside the video -->
     <div class="absolute inset-0">
         <video autoplay loop muted playsinline class="w-full h-full object-cover scale-105">
             <source src="assets/videos/bdvdo3.mp4" type="video/mp4">
@@ -10,17 +9,23 @@
     </div>
 
     <div class="relative z-20 container mx-auto h-full flex items-center">
-        <div class="text-left md:text-center max-w-5xl mx-auto text-white px-6">
+        <div class="text-center md:text-center max-w-5xl mx-auto text-white px-6 align-center">
             <!-- dynamic pre-header -->
-            <span class="inline-block px-5 py-2 mb-8 text-xs font-semibold tracking-wider uppercase bg-gradient-to-r from-blue-500/30 to-indigo-500/30 border border-white/20 rounded-full backdrop-blur-md shadow-lg float-animation">
-                <i class="fas fa-satellite-dish mr-2 text-blue-200"></i> Data-Driven Market Intelligence for Smarter Business Decisions
-            </span>
+<span class="inline-block mx-auto max-w-[260px] sm:max-w-full text-center
+px-4 sm:px-5 py-2 mb-6 sm:mb-8 
+text-[10px] sm:text-xs font-semibold tracking-wider uppercase 
+bg-gradient-to-r from-blue-500/30 to-indigo-500/30 
+border border-white/20 rounded-full backdrop-blur-md shadow-lg float-animation">
+    
+    <i class="fas fa-satellite-dish mr-2 text-blue-200"></i> 
+    Data-Driven Market Intelligence for Smarter Business Decisions
+</span>
             
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
+            <h1 class="text-2xl sm:text-4xl lg:text-5xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
                 <span class="bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent">Real-Time</span> Marketing Research <br class="hidden md:block">& Predictive Power
             </h1>
 
-            <p class="text-lg md:text-2xl text-gray-100 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+            <p class="text-md md:text-2xl text-gray-100 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
                 Make confident decisions with real-time market intelligence,<br class="hidden sm:block"> 
                 <span class="font-semibold text-white">consumer insights, and predictive analytics</span> — trusted by 500+ brands.
             </p>
@@ -37,13 +42,13 @@
 
             <!-- enriched insight chips with icons (more attractive) -->
             <div class="flex flex-wrap justify-center gap-3 text-sm font-medium">
-                <div class="insight-chip px-5 py-3 rounded-full backdrop-blur-md text-white flex items-center gap-2 shadow-lg">
+                <div class="insight-chip px-5 py-3  rounded-full backdrop-blur-md text-white flex items-center gap-2 shadow-lg">
                     <i class="fas fa-bolt text-yellow-300"></i> 📡 Live market signals
                 </div>
-                <div class="insight-chip px-5 py-3 rounded-full backdrop-blur-md text-white flex items-center gap-2 shadow-lg">
+                <div class="insight-chip px-5 py-3 rounded-full sm:block hidden backdrop-blur-md text-white flex items-center gap-2 shadow-lg">
                     <i class="fas fa-users text-blue-200"></i> 📊 Consumer & brand insights
                 </div>
-                <div class="insight-chip px-5 py-3 rounded-full backdrop-blur-md text-white flex items-center gap-2 shadow-lg">
+                <div class="insight-chip px-5 py-3 rounded-full sm:block hidden backdrop-blur-md text-white flex items-center gap-2 shadow-lg">
                     <i class="fas fa-brain text-purple-200"></i> 🧠 Predictive & trend analytics
                 </div>
                 <div class="insight-chip px-5 py-3 rounded-full backdrop-blur-md text-white flex items-center gap-2 shadow-lg lg:hidden xl:flex">
@@ -52,10 +57,5 @@
             </div>
         </div>
     </div>
-    <!-- subtle scroll indicator -->
-    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div class="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-            <div class="w-1 h-2 bg-white rounded-full mt-2"></div>
-        </div>
-    </div>
+
 </section>
