@@ -45,7 +45,7 @@
 <?php include 'components/common/header.php'?>
 
 <!-- ================ HERO / BREADCRUMB : elevated glass & wave ================ -->
-<section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 py-28 text-white">
+<section class="relative overflow-hidden bg-gradient-to-br from-[#0b1f3a] via-[#112b4e] to-[#1b3a5c]  text-white py-16 ">
     <!-- abstract animated shapes -->
     <div class="absolute top-0 left-0 w-full h-full opacity-10">
         <div class="absolute top-10 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
@@ -86,6 +86,11 @@
     
     <div class="container mx-auto px-6 relative z-10">
         <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+
+
+
+        
             <?php include 'components/contact/contactform.php'?>
             
             <!-- ---------- RIGHT: CONTACT INFO / BRAND STORY with ELEGANT CARDS ---------- -->
@@ -234,7 +239,7 @@
 </section>
 
 <!-- ================ FOOTER placeholder (includes/footer.php simulation) ================ -->
-<footer class="bg-gray-900 text-white py-16 border-t border-gray-800">
+<footer class="bg-gradient-to-br from-[#0b1f3a] via-[#112b4e] to-[#1b3a5c]   text-white py-16 border-t border-gray-800">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="mb-6 md:mb-0">

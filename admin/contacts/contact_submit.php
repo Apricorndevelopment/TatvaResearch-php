@@ -15,7 +15,7 @@ VALUES('$name','$email','$message')";
 
 // Problem -page redirect nhi hora
 if($conn->query($sql)){
-    header("Location: ../../contact.php");
+    header("Location: ../../contact.php?success=1");
     exit;
 }else{
     echo "Error saving message";

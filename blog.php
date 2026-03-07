@@ -1,12 +1,6 @@
-   
 <?php include 'components/common/header.php'?>
-<?php
-include "admin/includes/db.php";
-
-// Fetch blogs from database
-$result = $conn->query("SELECT * FROM blog ORDER BY id DESC");
-?>
-
+<?php include "admin/includes/db.php";
+$result = $conn->query("SELECT * FROM blog ORDER BY id DESC");?>
 <!DOCTYPE html>
 <html>
 <head>

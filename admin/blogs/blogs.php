@@ -3,13 +3,10 @@
 
 <div class="flex-1 p-8 min-h-screen bg-gray-100 w-full">
 
-    <!-- Sidebar -->
     <?php include "../includes/sidebar.php"; ?>
 
-    <!-- Main Content -->
     <div class="flex-1 p-10">
 
-        <!-- Page Header -->
         <div class="flex justify-between items-center mb-8">
             <h1 class="text-3xl font-bold text-gray-800">📚 Blog Management</h1>
 
@@ -22,7 +19,6 @@
             </a>
         </div>
 
-        <!-- Blog Table Card --> 
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
 
             <div class="p-6 border-b">
@@ -58,12 +54,14 @@
                                     {$row['created_at']}
                                   </td>";
 
+                            // Yahan par Delete button mein onclick confirm popup lagaya gaya hai
                             echo "<td class='px-6 py-4 text-center space-x-3'>
                                     <a href='edit_blog.php?id={$row['id']}' 
                                        class='text-blue-600 hover:text-blue-800 font-medium'>
                                        Edit
                                     </a>
                                     <a href='delete_blog.php?id={$row['id']}' 
+                                       onclick='return confirm(\"Are you sure you want to delete this blog? This action cannot be undone.\");'
                                        class='text-red-600 hover:text-red-800 font-medium'>
                                        Delete
                                     </a>
@@ -72,11 +70,6 @@
                             echo "</tr>";
                         }
                         ?>
-                        <?php
-
-
-?>
-
 
                     </tbody>
 
@@ -88,5 +81,3 @@
     </div>
 
 </div>
-
-

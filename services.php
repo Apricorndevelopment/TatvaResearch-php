@@ -27,7 +27,7 @@ $pageTitle = "Our Services | Tatva Research";
 <?php include 'components/common/header.php'?>
 
 <!-- Hero Section -->
-<section class="bg-gradient-to-r from-indigo-900 to-blue-800 text-white py-20 ">
+<section class="bg-gradient-to-br from-[#0b1f3a] via-[#112b4e] to-[#1b3a5c]  text-white py-16  ">
     <div class="max-w-6xl mx-auto px-6 text-center mt-8">
         <h2 class="text-4xl font-bold mb-4">Our Marketing Research Services</h2>
         <p class="text-lg text-gray-200 max-w-3xl mx-auto">
@@ -100,7 +100,7 @@ $pageTitle = "Our Services | Tatva Research";
 </section>
 
 <!-- CTA Section -->
-<section class="bg-blue-900 text-white py-16 text-center">
+<section class="text-white py-16 text-center bg-gradient-to-br from-[#0b1f3a] via-[#112b4e] to-[#1b3a5c]">
     <h2 class="text-3xl font-bold mb-4">Ready to Solve Your Market Challenges?</h2>
     <p class="mb-6 text-gray-200">Let Tatva Research turn your data into strategic advantage.</p>
     <a href="contact.php" class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
